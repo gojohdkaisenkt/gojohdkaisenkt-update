@@ -1,0 +1,96 @@
+-- https://scriptblox.com/script/Universal-Script-1x1x1x1-blue-gui-ANOTHER-VERSION-OF-1X1X1X1-GUI-PLS-NO-HATE-14099
+
+-- Gui to Lua
+-- Version: 3.2
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local e1x1x1x1Music = Instance.new("TextButton")
+local e2006Theme = Instance.new("TextButton")
+local e666 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.382171214, 0, 0.328530252, 0)
+Frame.Size = UDim2.new(0, 378, 0, 250)
+
+Name.Name = "Name"
+Name.Parent = Frame
+Name.BackgroundColor3 = Color3.fromRGB(0,0,255)
+Name.Size = UDim2.new(0, 378, 0, 25)
+Name.Font = Enum.Font.LuckiestGuy
+Name.Text = "select a version "
+Name.TextColor3 = Color3.fromRGB(0, 0, 0)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(0,0,255)
+Credits.Position = UDim2.new(0, 0, 0.912, 0)
+Credits.Size = UDim2.new(0, 378, 0, 22)
+Credits.Font = Enum.Font.LuckiestGuy
+Credits.Text = "By gojohdkaisenkt"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+
+e1x1x1x1Music.Name = "e1x1x1x1Music"
+e1x1x1x1Music.Parent = Frame
+e1x1x1x1Music.BackgroundColor3 = Color3.fromRGB(0,0,255)
+e1x1x1x1Music.Position = UDim2.new(0.0714285746, 0, 0.436000019, 0)
+e1x1x1x1Music.Size = UDim2.new(0, 79, 0, 31)
+e1x1x1x1Music.Font = Enum.Font.LuckiestGuy
+e1x1x1x1Music.Text = "version 1"
+e1x1x1x1Music.TextColor3 = Color3.fromRGB(0, 0, 0)
+e1x1x1x1Music.TextScaled = true
+e1x1x1x1Music.TextSize = 14.000
+e1x1x1x1Music.TextWrapped = true
+e1x1x1x1Music.MouseButton1Down:connect(function()
+	--Made by gojohdkaisenkt
+
+loadstring (game: HttpGet ( 'https://raw.githubusercontent.com/gojohdkaisenkt/gojohdkaisenkt-update/refs/heads/main/gojohdkaisenkt%20big%20update' ))()
+    end)
+	
+
+e2006Theme.Name = "e2006Theme"
+e2006Theme.Parent = Frame
+e2006Theme.BackgroundColor3 = Color3.fromRGB(0,0,255)
+e2006Theme.Position = UDim2.new(0.693121672, 0, 0.43599999, 0)
+e2006Theme.Size = UDim2.new(0, 89, 0, 31)
+e2006Theme.Font = Enum.Font.LuckiestGuy
+e2006Theme.Text = "version 2"
+e2006Theme.TextColor3 = Color3.fromRGB(0, 0, 0)
+e2006Theme.TextScaled = true
+e2006Theme.TextSize = 14.000
+e2006Theme.TextWrapped = true
+e2006Theme.MouseButton1Down:connect(function()
+	--Made by gojohdkaisenkt
+
+	loadstring (game: HttpGet ( 'https://raw.githubusercontent.com/gojohdkaisenkt/gojohdkaisenkt-update/refs/heads/main/gojohdkaisenkt%20update%202' ))()
+   end)
+e666.Name = "e666"
+e666.Parent = Frame
+e666.BackgroundColor3 = Color3.fromRGB(0,0,255)
+e666.Position = UDim2.new(0.388888896, 0, 0.43599999, 0)
+e666.Size = UDim2.new(0, 83, 0, 31)
+e666.Font = Enum.Font.LuckiestGuy
+e666.Text = "close"
+e666.TextColor3 = Color3.fromRGB(0, 0, 0)
+e666.TextScaled = true
+e666.TextSize = 14.000
+e666.TextWrapped = true
+e666.MouseButton1Down:connect(function()
+	Frame.Visible = false
+       end)
