@@ -2,6 +2,7 @@
 
 
 
+
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 local TweenService = game:GetService("TweenService")
@@ -10,7 +11,7 @@ local RunService = game:GetService("RunService")
 -- GUI chính
 local gui = Instance.new("ScreenGui", playerGui)
 gui.Name = "LuauGUI"
-gui.ResetOnSpawn = true
+gui.ResetOnSpawn = false
 
 -- Phần pulse frame giữa màn hình
 local frame = Instance.new("Frame", gui)
@@ -146,7 +147,7 @@ end)
 local cornerGui = Instance.new("ScreenGui")
 cornerGui.Name = "CornerToggleGui"
 cornerGui.Parent = playerGui
-cornerGui.ResetOnSpawn = true
+cornerGui.ResetOnSpawn = false
 
 local toggleButton = Instance.new("TextButton")
 toggleButton.Size = UDim2.new(0, 100, 0, 40)
