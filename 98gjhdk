@@ -10,7 +10,7 @@ local RunService = game:GetService("RunService")
 -- GUI chính
 local gui = Instance.new("ScreenGui", playerGui)
 gui.Name = "LuauGUI"
-gui.ResetOnSpawn = false
+gui.ResetOnSpawn = true
 
 -- Phần pulse frame giữa màn hình
 local frame = Instance.new("Frame", gui)
